@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+<style>
+    .Hiremi_inscription{
+        line-height: 300px;
+        }
+
+</style>
+
+    
+</head>
+
+<body>
+    </section>
+    <!-- Welcome -->
+    <section id="head">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="flex-container d-flex flex-column align-items-center justify-content-between">
+                        <div class="welcome__circle">
+                            <img src="images/logo.png" alt="Group 5" width="170" height="160">
+                        </div>
+                        <div class="welcome__header">
+                            <h1>Human Body Analyzer </h1>
+                        </div>
+                        <div class="welcome__text">
+                            <p>Made using ML Frameworks, Python, HTML & CSS and Hosted on AWS EC2 Instance</p>
+                        </div>
+
+                        <div> 
+                            <div class="checked_box">
+                                <input type="checkbox" checked="checked">
+                                <label>Gender</label>
+                            </div>
+                                <div class="checked_box">
+                                    <input type="checkbox" >
+                                    <label>Detect Age</label>
+                                </div>
+                                <div class="checked_box">
+                                    <input type="checkbox">
+                                    <label>Detect Lips open or Close</label>
+                                 </div>
+                                <div class="checked_box">
+                                    <input type="checkbox" >
+                                    <label>Mood of Human (Laugh or Serious)</label>
+                                </div>
+                                <div class="checked_box">
+                                    <input type="checkbox">
+                                    <label>Glass Present or Not</label>
+                                </div>
+                                <div class="checked_box">
+                                    <input type="checkbox" >
+                                    <label>Human Count</label>
+                                </div>
+                            </div>
+                             <button id="snap" class="buttons"><a href="#cam">Find Result</a></button>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </section>
+   
+
+    <a name="cam"> <div class="demo-wrapper">
+
+            <video id="video" width="640" height="480" autoplay></video>
+           
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </a>
+            <script>
+        
+                // Put event listeners into place
+                window.addEventListener("DOMContentLoaded", function() {
+                    // Grab elements, create settings, etc.
+                    var canvas = document.getElementById('canvas');
+                    var context = canvas.getContext('2d');
+                    var video = document.getElementById('video');
+                    var mediaConfig =  { video: true };
+                    var errBack = function(e) {
+                        console.log('An error has occurred!', e)
+                    };
+        
+                    // Put video listeners into place
+                    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                        navigator.mediaDevices.getUserMedia(mediaConfig).then(function(stream) {
+                            //video.src = window.URL.createObjectURL(stream);
+                            video.srcObject = stream;
+                            video.play();
+                        });
+                    }
+        
+                    /* Legacy code below! */
+                    else if(navigator.getUserMedia) { // Standard
+                        navigator.getUserMedia(mediaConfig, function(stream) {
+                            video.src = stream;
+                            video.play();
+                        }, errBack);
+                    } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+                        navigator.webkitGetUserMedia(mediaConfig, function(stream){
+                            video.src = window.webkitURL.createObjectURL(stream);
+                            video.play();
+                        }, errBack);
+                    } else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
+                        navigator.mozGetUserMedia(mediaConfig, function(stream){
+                            video.src = window.URL.createObjectURL(stream);
+                            video.play();
+                        }, errBack);
+                    }
+        
+                    // Trigger photo take
+                    document.getElementById('snap').addEventListener('click', function() {
+                        context.drawImage(video, 0, 0, 640, 480);
+                    });
+                }, false);
+        
+            </script>
+        
+        </div>
+     <section id="output" > 
+        <div class="Hiremi">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-4">
+                       <div class=" d-flex flex-row justify-content-between">
+                           <div class="Hiremi_inscription" >Result:</div>
+                           </div>
+                       </div>
+                    </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+
+    </body>
+
+</html>
