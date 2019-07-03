@@ -1,490 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Human Body Analyzer</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/utilities.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <title>Human Body Analyzer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+<style>
+.gap{
+  height:auto;
+  width:auto;
+  margin-top: 20px;
+  margin-block-start: 0%;
+  margin-bottom: 20px
+}
+.flex-container .welcome__link {
+color: #3695ff;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+text-transform: uppercase;
+padding-top: 12px;
+margin-bottom: 131px;
+}
+.buttons{
+    background-color: #b2c8eb; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 70px;
+    border-radius: 28px;
+  }
+  .buttons:hover{
+    background-color:#080241;
+    color: #b2c8eb
+  }
+ .buttons a:link{
+    color: white;
+  }
+  .buttons a:hover{
+    color: white;
+  }
+.jumbotron{
+  background-color: #515cf5;
+  height: 600px;
+
+}
+.marg{
+  margin-top:85px;
+}
+.techtron{
+  background-color: white;
+}
+.container{
+  margin-top: 20px;
+}
+.teamtron{
+  background-color: #8285a8;
+  height:auto;
+  padding: 5px;
+}
+</style>
+
+  
 </head>
-
 <body>
-    </section>
-    <!-- Welcome -->
-    <section id="welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 offset-1">
-                    <div class="flex-container d-flex flex-column align-items-center justify-content-between">
-                        <div class="welcome__menu">
-                        </div>
-                        <div class="welcome__circle">
-                            <img src="images/logo.png" alt="Group 5" width="170" height="160">
-                        </div>
-                        <div class="welcome__header">
-                            <h1>Human Body Analyzer </h1>
-                        </div>
-                        <div class="welcome__text">
-                            <p>Made using ML Frameworks, Python, HTML & CSS and Hosted on AWS EC2 Instance</p>
-                        </div>
-                        <div class="welcome__link button button--primary">
-                            <a href="use.html">Use Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+       
+</div>
+<div class="jumbotron text-center">
+  <div class="marg">
+    <img src="images/logo.png" alt="Group 5" width="20%" height="20%">
+  <h1>Human Body Analyzer</h1>
+  <p>Made using ML Frameworks, Python, HTML & CSS and Hosted on AWS EC2 Instance</p>
+  <div class="welcome__link buttons button--primary">
+      <a href="use.html">Use Now</a>
+  </div>               
+</div></div>
+
+<!----------------------------------------- technologies----------------------------------------------------->
+<div class= "techtron text-center">
+    <h1>Technologies Used</h1><br><br>
+  </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 text-center ">
+            <div class="gap ">
+            
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" ><img src="images/html5.png" alt="Group 5" width="50%" height="45%"></a>
+         </div></div>
+        
+    <div class="col-sm-2 text-center">
+        <div class="gap ">
+        
+        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" > <img src="images/css.png" alt="CSS3" width="35%" height="25%"></a>
+      </div></div>
+    <div class="col-sm-2 text-center">
+        <div class="gap ">
+        
+        <a href="https://www.javascript.com/" target="_blank" ><img src="images/js.png" alt="Javascript" width="50%" height="45%"></a>
+       </div></div>
+  
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+         
+          <a href="https://httpd.apache.org/" target="_blank" >  <img src="images/apache.png" alt="Apache" width="100%" height="100%"></a>
+         </div></div>
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+          
+          <a href="https://www.python.org/" target="_blank" > <img src="images/python-logo.png" alt="Python" width="100%" height="100%"></a>
+        </div></div>
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+          
+          <a href="https://aws.amazon.com/" target="_blank" >  <img src="images/aws.png" alt="AWS" width="60%" height="50%"></a>     
+        </div></div>
+    </div>    
+</div> 
+<!-----------------------------------------------frameworks ------------------------------------------------->
+<div class="techtron text-center">
+    <h1>Frameworks Used</h1>
+  </div>
+<div class="container">
     
-    <!-- Technologies -->
-    <div class="container">
-        <h2>Technologies Used</h2>
-        <div class="row">
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/html5.png" alt="HTML5" width="175" height="200">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column align-items-center">
-                        <div class="panel__text">
-                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" ><h3>HTML5</h3></a>
-                            <div class="panel__description">
-                                <p>HTML 5 (formerly and commonly spelled HTML5) is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it. HTML 5 is the fifth and current major version of HTML, and subsumes XHTML.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/css.png" alt="CSS3" width="125" height="200">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column justify-content-between">
-                        <div class="panel__text">
-                           <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" > <h3>CSS3</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/js.png" alt="Javascript" width="175" height="200">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column justify-content-between">
-                        <div class="panel__text">
-                            <a href="https://www.javascript.com/" target="_blank" ><h3>Javascript</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/apache.png" alt="Apache" width="200" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                          <a href="https://httpd.apache.org/" target="_blank" > <h3>Apache</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/python-logo.png" alt="Python" width="220" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                           <a href="https://www.python.org/" target="_blank" > <h3>Python</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/aws.png" alt="AWS" width="170" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                          <a href="https://aws.amazon.com/" target="_blank" >  <h3>AWS</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- frameworks -->
-    <section id="framework">
-    <div class="container">
-        <h2>Framework Used</h2>
-        <div class="row">
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/numpy.png" alt="numpy" width="175" height="120">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column align-items-center">
-                        <div class="panel__text">
-                            <a href="https://www.numpy.org/" target="_blank" ><h3>Numpy</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/pandas_logo.png" alt="pandas" width="125" height="120">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column justify-content-between">
-                        <div class="panel__text">
-                           <a href="https://pandas.pydata.org/" target="_blank" > <h3>Pandas</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column align-items-center">
-                    <div class="panel__icon">
-                        <img src="images/matplotlib.webp" alt="matplotlib" width="200" height="120">
-                    </div>
-                    <div class="panel__wrapper d-flex flex-column justify-content-between">
-                        <div class="panel__text">
-                            <a href="https://matplotlib.org/" target="_blank" ><h3>Matplotlib</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/opencv-logo-1.png" alt="openCV" width="200" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                          <a href="https://opencv.org/" target="_blank" > <h3>OpenCV</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/tensorflow.svg" alt="Tensorflow" width="220" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                           <a href="https://www.tensorflow.org/" target="_blank" > <h3>Tensorflow</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel d-flex flex-column">
-                    <div class="panel__icon">
-                        <img src="images/scikit-learn-logo.png" alt="scikit-learn" width="170" height="100">
-                    </div>
-                    <div class="panel__wrapper">
-                        <div class="panel__text">
-                          <a href="https://scikit-learn.org/" target="_blank" >  <h3>Scikit Learn</h3></a>
-                            <div class="panel__description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- our team -->
-    <section id="team">
-    <div class="container">
-            <h2>Our Team</h2>
-            <div class="row">
-                <div class="col-4">
-                    <div class="panel d-flex flex-column align-items-center">
-                        <div class="panel__icon im">
-                            <img src="images/sample.jpg" alt="Nisar Ahmed" width="250" height="250">
-                        </div>
-                        <div class="panel__wrapper d-flex flex-column align-items-center">
-                            <div class="panel__text">
-                                <a href="https://www.github.com/nampy3" target="_blank" ><h3>Nisar Ahmed</h3></a>
-                                <div class="panel__description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                        delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                        Soluta iste distinctio hic voluptate suscipit!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="panel d-flex flex-column align-items-center">
-                        <div class="panel__icon im">
-                            <img src="images/sample.jpg" alt="Divyanshu Singh" width="250" height="250">
-                        </div>
-                        <div class="panel__wrapper d-flex flex-column justify-content-between">
-                            <div class="panel__text">
-                               <a href="https://www.github.com/" target="_blank" > <h3>Divyanshu Singh</h3></a>
-                                <div class="panel__description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                        delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                        Soluta iste distinctio hic voluptate suscipit!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="panel d-flex flex-column align-items-center">
-                        <div class="panel__icon im">
-                            <img src="images/sample.jpg" alt="Mohit Suthar" width="250" height="250">
-                        </div>
-                        <div class="panel__wrapper d-flex flex-column justify-content-between">
-                            <div class="panel__text">
-                                <a href="https://www.github.com/" target="_blank" ><h3>Mohit Suthar</h3></a>
-                                <div class="panel__description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                        delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                        Soluta iste distinctio hic voluptate suscipit!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-4">
-                        <div class="panel d-flex flex-column align-items-center">
-                            <div class="panel__icon im">
-                                <img src="images/sample.jpg" alt="Navdeep Maan" width="250" height="250">
-                            </div>
-                            <div class="panel__wrapper d-flex flex-column align-items-center">
-                                <div class="panel__text">
-                                    <a href="https://www.github.com/ " target="_blank" ><h3>Navdeep Maan </h3></a>
-                                    <div class="panel__description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                            delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                            Soluta iste distinctio hic voluptate suscipit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="panel d-flex flex-column align-items-center">
-                            <div class="panel__icon im">
-                                <img src="images/sample.jpg" alt="Shubham Kumar" width="250" height="250">
-                            </div>
-                            <div class="panel__wrapper d-flex flex-column justify-content-between">
-                                <div class="panel__text">
-                                   <a href="https://www.github.com/" target="_blank" > <h3>Shubham Kumar</h3></a>
-                                    <div class="panel__description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                            delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                            Soluta iste distinctio hic voluptate suscipit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="panel d-flex flex-column align-items-center">
-                            <div class="panel__icon im">
-                                <img src="images/sample.jpg" alt="Anuj Godara" width="250" height="250">
-                            </div>
-                            <div class="panel__wrapper d-flex flex-column justify-content-between">
-                                <div class="panel__text">
-                                    <a href="https://www.github.com/" target="_blank" ><h3>Anuj Godara</h3></a>
-                                    <div class="panel__description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                            delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                            Soluta iste distinctio hic voluptate suscipit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-4">
-                            <div class="panel d-flex flex-column align-items-center">
-                                <div class="panel__icon im">
-                                    <img src="images/sample.jpg" alt="Bharat Kishore" width="250" height="250">
-                                </div>
-                                <div class="panel__wrapper d-flex flex-column align-items-center">
-                                    <div class="panel__text">
-                                        <a href="https://www.github.com/" target="_blank" ><h3>Bharat Kishore</h3></a>
-                                        <div class="panel__description">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                                delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                                Soluta iste distinctio hic voluptate suscipit!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="panel d-flex flex-column align-items-center">
-                                <div class="panel__icon im">
-                                    <img src="images/sample.jpg" alt="Deepak Maurya" width="250" height="250">
-                                </div>
-                                <div class="panel__wrapper d-flex flex-column justify-content-between">
-                                    <div class="panel__text">
-                                       <a href="https://www.github.com/" target="_blank" > <h3>Deepak Maurya</h3></a>
-                                        <div class="panel__description">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                                delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                                Soluta iste distinctio hic voluptate suscipit!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="panel d-flex flex-column align-items-center">
-                                <div class="panel__icon im">
-                                    <img src="images/sample.jpg" alt="Shivangee Singh" width="250" height="250">
-                                </div>
-                                <div class="panel__wrapper d-flex flex-column justify-content-between">
-                                    <div class="panel__text">
-                                        <a href="https://www.github.com/" target="_blank" ><h3>Shivangee Singh</h3></a>
-                                        <div class="panel__description">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                                delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                                Soluta iste distinctio hic voluptate suscipit!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col-4">
-                                <div class="panel d-flex flex-column align-items-center">
-                                    <div class="panel__icon im">
-                                        <img src="images/sample.jpg" alt="Shreya Sharma" width="250" height="250">
-                                    </div>
-                                    <div class="panel__wrapper d-flex flex-column align-items-center">
-                                        <div class="panel__text">
-                                            <a href="https://www.github.com/" target="_blank" ><h3>Shreya Sharma</h3></a>
-                                            <div class="panel__description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="panel d-flex flex-column align-items-center">
-                                    <div class="panel__icon im">
-                                        <img src="images/sample.jpg" alt="Siddhant Jain" width="250" height="250">
-                                    </div>
-                                    <div class="panel__wrapper d-flex flex-column justify-content-between">
-                                        <div class="panel__text">
-                                           <a href="https://www.github.com/" target="_blank" > <h3>Siddhant Jain</h3></a>
-                                            <div class="panel__description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam! Veritatis
-                                                    delectus ea, est, optio eaque, culpa fugiat laboriosam quae placeat hic ullam quos.
-                                                    Soluta iste distinctio hic voluptate suscipit!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-        </div>
-    </section>
-    <!-- Hire Me -->
-    <div class="Hiremi">
-     <div class="container">
-         <div class="row">
-            <div class="col-4">
-            <div class=" d-flex flex-row justify-content-between">
-                <div class="Hiremi_inscription">contact us:</div>
-               
-                </div>
-            </div>
-         </div>
-         </div>
-     </div>  
-    </div> 
-
+    <div class="row"> 
+        <div class="col-sm-2 text-center">
+            <div class="gap ">
+            
+            <a href="https://www.numpy.org/" target="_blank" ><img src="images/numpy.png" alt="numpy" width="50%" height="20%"></a>
+         </div></div>
+        
+    <div class="col-sm-2 text-center">
+        <div class="gap ">
+       
+        <a href="https://pandas.pydata.org/" target="_blank" >  <img src="images/pandas_logo.png" alt="pandas" width="50%" height="20%"></a>
+      </div></div>
+    <div class="col-sm-2 text-center">
+        <div class="gap ">
+        
+        <a href="https://matplotlib.org/" target="_blank" ><img src="images/matplotlib.webp" alt="matplotlib" width="50%" height="20%"></a>
+         </div></div>
+         
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+          
+          <a href="https://opencv.org/" target="_blank" > <img src="images/opencv-logo-1.png" alt="openCV" width="50%" height="20%"></a>
+         </div></div>
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+         
+          <a href="https://www.tensorflow.org/" target="_blank" > <img src="images/tensorflow.svg" alt="Tensorflow" width="80%" height="20%"></a>
+       </div></div>
+      <div class="col-sm-2 text-center">
+          <div class="gap ">
+         
+          <a href="https://scikit-learn.org/" target="_blank" >   <img src="images/scikit-learn-logo.png" alt="scikit-learn" width="50%" height="20%"></a>  
+        </div></div>
+    </div>    
+</div>
+<!-----------------------------------------------Team--------------------------------------------------->
+<div class="teamtron text-center">
+    <h1>Our Team</h1>
+  </div>
+<div class="container">
     
-
-
+    <div class="row">
+        <div class="col-sm-3 text-center">
+            <div class="gap ">
+            <img src="images/sample.jpg" alt="Nisar Ahmed" width="50%" height="50%">
+            <a href="https://www.github.com/nampy3" target="_blank" ><h5>Nisar Ahmed</h5></a>
+           </div></div>
+        <br><br>
+    <div class="col-sm-3 text-center">
+        <div class="gap ">
+        <img src="images/sample.jpg" alt="Divyanshu Singh" width="50%" height="50%">
+        <a href="https://www.github.com/" target="_blank" > <h5>Divyanshu Singh</h5></a>
+        </div></div><br><br>
+    <div class="col-sm-3 text-center">
+        <div class="gap ">
+        <img src="images/sample.jpg" alt="Mohit Suthar" width="50%" height="50%">
+        <a href="https://www.github.com/" target="_blank" ><h5>Mohit Suthar</h5></a>
+       </div></div><br><br>
+ 
+      <div class="col-sm-3 text-center">
+          <div class="gap ">
+          <img src="images/sample.jpg" alt="Navdeep Maan" width="50%" height="50%">
+          <a href="https://www.github.com/ " target="_blank" ><h5>Navdeep Maan </h5></a>
+        </div></div><br><br>
+      </div>  
+      <div class="row">
+      <div class="col-sm-3 text-center">
+          <div class="gap ">
+          <img src="images/sample.jpg" alt="Shubham Kumar" width="50%" height="50%">
+          <a href="https://www.github.com/" target="_blank" > <h5>Shubham Kumar</h5></a>
+       </div></div><br><br>
+      <div class="col-sm-3 text-center">
+          <div class="gap ">
+          <img src="images/sample.jpg" alt="Anuj Godara" width="50%" height="50%">
+          <a href="https://www.github.com/" target="_blank" ><h5>Anuj Godara</h5></a> 
+        </div></div><br><br>
+    
+        <div class="col-sm-3 text-center">
+            <div class="gap ">
+            <img src="images/sample.jpg" alt="Bharat Kishore" width="50%" height="50%">
+            <a href="https://www.github.com/" target="_blank" ><h5>Bharat Kishore</h5></a>
+         </div></div><br><br>
+        <div class="col-sm-3 text-center">
+            <div class="gap ">
+            <img src="images/sample.jpg" alt="Deepak Maurya" width="50%" height="50%">
+            <a href="https://www.github.com/" target="_blank" > <h5>Deepak Maurya</h5></a>
+         </div></div><br><br>
+        
+        <div class="col-sm-4 text-center">
+            <div class="gap ">
+            <img src="images/sample.jpg" alt="Shivangee Singh" width="50%" height="50%">
+            <a href="https://www.github.com/" target="_blank" ><h5>Shivangee Singh</h5></a> 
+           </div></div><br><br>
+     
+          <div class="col-sm-4 text-center">
+              <div class="gap ">
+              <img src="images/sample.jpg" alt="Shreya Sharma" width="50%" height="50%">
+              <a href="https://www.github.com/" target="_blank" ><h5>Shreya Sharma</h5></a>
+             </div> </div><br><br>
+          <div class="col-sm-4 text-center">
+              <div class="gap ">
+              <img src="images/sample.jpg" alt="Siddhant Jain" width="50%" height="50%">
+              <a href="https://www.github.com/" target="_blank" > <h5>Siddhant Jain</h5></a>
+           </div> </div><br><br>
+           
+</div>
+<!----------------------------------------------------------------------------------------------------------->
 </body>
 </html>

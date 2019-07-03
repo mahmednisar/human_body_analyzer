@@ -1,82 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/utilities.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-
+  <title>Human Body Analyzer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
 <style>
-    .Hiremi_inscription{
+
+.Hiremi_inscription{
         line-height: 300px;
         }
 
+.jumbotron{
+  background-color: #515cf5;
+  height: 600px;
+
+}
+.resultron{
+    background-color: #515cf5;
+  height: auto;
+  padding-bottom: 10px;
+  color: azure;
+  padding: 20px;
+  padding-left: 40px;
+
+}
+.buttons {
+  background-color: rgb(160, 150, 221); 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 28px;
+}
+.buttons a:link{
+    color:  rgb(38, 6, 248);
+}
+.buttons a:hover{
+    color: antiquewhite
+}
+.buttons:hover {
+  background-color: rgb(10, 2, 65);
+}
+fieldset { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}
 </style>
 
     
 </head>
 
 <body>
-    </section>
-    <!-- Welcome -->
-    <section id="head">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 offset-1">
-                    <div class="flex-container d-flex flex-column align-items-center justify-content-between">
-                        <div class="welcome__circle">
-                            <img src="images/logo.png" alt="Group 5" width="170" height="160">
-                        </div>
-                        <div class="welcome__header">
-                            <h1>Human Body Analyzer </h1>
-                        </div>
-                        <div class="welcome__text">
-                            <p>Made using ML Frameworks, Python, HTML & CSS and Hosted on AWS EC2 Instance</p>
-                        </div>
-
-                        <div> 
-                            <div class="checked_box">
-                                <input type="checkbox" checked="checked">
-                                <label>Gender</label>
-                            </div>
-                                <div class="checked_box">
-                                    <input type="checkbox" >
-                                    <label>Detect Age</label>
-                                </div>
-                                <div class="checked_box">
-                                    <input type="checkbox">
-                                    <label>Detect Lips open or Close</label>
-                                 </div>
-                                <div class="checked_box">
-                                    <input type="checkbox" >
-                                    <label>Mood of Human (Laugh or Serious)</label>
-                                </div>
-                                <div class="checked_box">
-                                    <input type="checkbox">
-                                    <label>Glass Present or Not</label>
-                                </div>
-                                <div class="checked_box">
-                                    <input type="checkbox" >
-                                    <label>Human Count</label>
-                                </div>
-                            </div>
-                             <button id="snap" class="buttons"><a href="#cam">Find Result</a></button>
-                    </div>
-                        
-                    </div>
-                </div>
+   
+</head>
+<body>
+       
+</div>
+<div class="jumbotron text-center">
+  <div class="marg">
+    <img src="images/logo.png" alt="Group 5" width="20%" height="20%">
+  <h1>Human Body Analyzer</h1>
+  <p>Made using ML Frameworks, Python, HTML & CSS and Hosted on AWS EC2 Instance</p>
+  <div><form action="server.cgi" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <div class="checked_box">
+            <input type="checkbox" checked="checked" name="gender">
+            <label>Gender</label>
+        </div>
+            <div class="checked_box">
+                <input type="checkbox" name="age" >
+                <label>Detect Age</label>
             </div>
-        </div>         
-    </section>
+            <div class="checked_box">
+                <input type="checkbox" name="lips">
+                <label>Detect Lips open or Close</label>
+             </div>
+            <div class="checked_box">
+                <input type="checkbox" name="mood" >
+                <label>Mood of Human (Laugh or Serious)</label>
+            </div>
+            <div class="checked_box">
+                <input type="checkbox" name="glass">
+                <label>Glass Present or Not</label>
+            </div>
+            <div class="checked_box">
+                <input type="checkbox" name="count" >
+                <label>Human Count</label>
+            </div>
+        <div class=" buttons">
+                <input class="buttons" type="submit" value="Find Result">
+</div></fieldset></form</div> 
+ 
+  </div>               
+</div></div>
+
+
+                     
+   
    
 
     <a name="cam"> <div class="demo-wrapper">
@@ -85,7 +119,7 @@
            
             <canvas id="canvas" width="640" height="480"></canvas>
         </a>
-            <script>
+        <script>
         
                 // Put event listeners into place
                 window.addEventListener("DOMContentLoaded", function() {
@@ -132,22 +166,11 @@
                 }, false);
         
             </script>
-        
+      
         </div>
-     <section id="output" > 
-        <div class="Hiremi">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-4">
-                       <div class=" d-flex flex-row justify-content-between">
-                           <div class="Hiremi_inscription" >Result:</div>
-                           </div>
-                       </div>
-                    </div>
-                    </div>
-                </div>
-    </section>
-
+        <div class="resultron ">
+           <h3> Result:</h3>
+        </div>
 
 
 
